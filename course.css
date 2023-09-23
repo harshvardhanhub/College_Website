@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  animation: shake 2s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-30px);
+  }
+
+  75% {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.logo img {
+  height: 90px;
+  animation: flip 3s infinite;
+  transform-origin: center;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotatex(0);
+  }
+
+  50% {
+    transform: rotatex(180deg);
+  }
+
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #ff0000;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  background-color: rgb(248, 248, 53);
+  color: maroon;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.main {
+  text-align: center;
+  padding: 20px;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.course-section {
+  background-color: #924646;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  transition: 0.5s;
+  width: calc(50% - 40px);
+  height: 200px;
+}
+
+.course-section:hover {
+  transform: translateY(-5px);
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 20px rgb(234, 0, 255);
+}
+
+.course-section:hover h2 {
+  color: #ff0000;
+  font-size: 30px;
+}
+
+.course-section:not(:hover) {
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+.course-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.course-section li {
+  margin-bottom: 5px;
+  color: maroon;
+  font-size: 20px;
+}
+
+.course-section:nth-child(2n+1) {
+  clear: both;
+}
+
+footer {
+  background-color: #ebf303;
+  color: black;
+  padding: .2px;
+  text-align: center;
+}

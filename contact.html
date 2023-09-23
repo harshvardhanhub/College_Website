@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alliance University - Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="Index.html"
+          ><img src="Collegepic/Alliance universtry logo.png" alt="Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contact">
+      <div class="container">
+        <div class="contact-info">
+          <h2>CONTACT INFORMATION</h2>
+          <p>
+            Alliance University - Central Campus, Chikkahadage Cross
+            Chandapura-Anekal, Main Road, Bengaluru, Karnataka 562106
+          </p>
+          <p>Phone: +91 80 4619 9000 / 9100 / +91 80 4129 9200</p>
+          <p>Email:enquiry@alliance.edu.in</p>
+        </div>
+        <div class="contact-form">
+          <h2></h2>
+          <form action="#">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3844884520485!2d77.66083231482317!3d12.935541420250745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16eeb4f214a7%3A0x7438e28b8eb9400b!2sAlliance%20University!5e0!3m2!1sen!2sus!4v1568977258786!5m2!1sen!2sus"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+
+    <footer>&copy; 2023 Alliance University.</footer>
+
+    <script>
+      // Smooth scrolling to anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

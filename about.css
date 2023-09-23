@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(black, white, black,white, black) ;
+}
+
+/* Header Styles */
+header {
+    background-image: url(Pic/AboutImg/a5.jpg);
+    background-size: cover;
+    background-position: center;
+    /* Set the background image to be centered */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 90px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #ff0000;
+    border-radius: 5px;
+}
+
+nav ul li a.active {
+    color: red;
+    background-color: rgba(78, 3, 252, 0.6);
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Highlight Section Styles */
+.highlight-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.highlight {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+    transform: scale(1.05);
+}
+
+.highlight img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Core Values Styles */
+.highlight h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #aa0245;
+    color: gold;
+    padding: 10px;
+    text-align: center;
+}
